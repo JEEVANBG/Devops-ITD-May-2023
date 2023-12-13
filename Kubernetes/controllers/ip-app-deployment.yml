@@ -25,9 +25,9 @@ kind: Service
 metadata:
     name: cip-ipapp
 spec:
+    type: NodePort
     selector:
         app: ip-app
-    type: NodePort
     ports:
       - name: http
         port: 8090
